@@ -540,6 +540,7 @@ ol ol {
   flex-direction: column;
   flex: 1 auto;
   justify-content: center;
+  align-items: center;
   margin: 50px 0; }
   @media (max-width: 684px) {
     .content {
@@ -615,8 +616,8 @@ h4:hover a {
   /* Add styles as needed */ }
 
 .profilepic {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   background-position: center;
   border-radius: 50%;
   display: flex;
@@ -625,8 +626,8 @@ h4:hover a {
   overflow: hidden; }
 
 .profilecolumn3 {
-  margin-top: 150px;
-  margin-left: 400px;
+  margin-top: 50px;
+  margin-left: 10px;
   flex: 1;
   /* Adjust the flex value to control width proportion */
   /* Add styles as needed */ }
@@ -641,7 +642,7 @@ h4:hover a {
 .profiletext-name {
   color: var(--background-secondary-white);
   font-family: 'Eczar', sans-serif;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: bold;
   font-style: normal; }
 
