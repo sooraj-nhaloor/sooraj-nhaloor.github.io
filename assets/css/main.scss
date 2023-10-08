@@ -9,6 +9,14 @@ html {
   box-sizing: inherit;
 }
 
+
+/* Adjust font size for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -236,36 +244,44 @@ ol ol {
 
 /*////////////////////profile////////////*/
 
-
+@media (max-width: 3840px) {
 .flex-container {
 align-content: center;
 align-items: center;
 margin-left: auto;
 margin-right: auto;
 display: flex;
+max-width: 100%;
 flex-direction: row; 
 justify-content: space-between; /* Adjust alignment as needed */
 gap: 100px; /* Adjust the gap between columns */
 
 .profilecolumn1 {
+  margin: auto;
+  padding: auto;
+  max-width: 100%;
+
 
   flex: 1.2; /* Adjust the flex value to control width proportion */
  /* Add styles as needed */
 }
 .profilecolumn2 {
 
-  flex: 1; /* Adjust the flex value to control width proportion */
+  flex: 1;
+  max-width: 100%;
+ /* Adjust the flex value to control width proportion */
    /* Add styles as needed */
 }
 
 
 .profilepic{
 
-  width: 300px;
-  height: 300px ;
+  width: 100px;
+  height:100px ;
   
   background-position: center;
   border-radius:50%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,26 +289,12 @@ gap: 100px; /* Adjust the gap between columns */
 
 
 }
-.profilecolumn3 { 
-  margin-top: 0px;
-  
-  flex: 1; /* Adjust the flex value to control width proportion */
-/* Add styles as needed */
-}
 
-.profiletext-upper{
-  margin-bottom: 10px;  
-    line-height: 1.7em;
-    font-size: 15px;
-    font-family: 'Rubik', sans-serif;
-    font-style: italic;
-   
-}
 .profiletext-name{
   
   color: var(--background-secondary-white);
   font-family: 'Eczar', sans-serif;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: bold;
   font-style: normal;
 }
@@ -309,7 +311,7 @@ gap: 100px; /* Adjust the gap between columns */
 
 
 }
-
+}
 
 
 .content {
