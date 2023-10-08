@@ -672,7 +672,7 @@ h4:hover a {
         font-style: italic; }
       .flex-container .profilecolumn2 .profiletext-name {
         margin-top: 30px;
-        font-family: 'Eczar', sans-serif;
+        font-family: 'Inter', sans-serif;
         color: var(--background-secondary-white);
         font-size: 28px;
         font-weight: bold;
@@ -694,7 +694,8 @@ h4:hover a {
   margin: 20px auto; }
   @media (max-width: 900px) {
     .post-cont {
-      max-width: 660px; } }
+      max-width: 660px;
+      font-family: 'Alata',sans-serif; } }
   .post-cont:not(:last-of-type) {
     border-bottom: 1px solid var(--border-color); }
   .post-cont-meta {
@@ -702,13 +703,15 @@ h4:hover a {
     margin-bottom: 10px; }
     @media (max-width: 684px) {
       .post-cont-meta {
-        font-size: .85rem; } }
+        font-size: .85rem;
+        font-family: 'Alata',sans-serif; } }
   .post-cont-title {
     font-size: 2.625rem;
     margin: 0 0 20px; }
     @media (max-width: 684px) {
       .post-cont-title {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        font-family: 'Alata',sans-serif; } }
     .post-cont-title a {
       text-decoration: none; }
   .post-cont-tags {
@@ -732,7 +735,8 @@ h4:hover a {
     @media (max-width: 900px) {
       .post-cont-cover {
         margin: 20px 0;
-        width: 100%; } }
+        width: 100%;
+        font-family: 'Alata',sans-serif; } }
 .post--regulation h1 {
   justify-content: center; }
 

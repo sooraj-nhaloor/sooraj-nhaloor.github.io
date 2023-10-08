@@ -422,7 +422,7 @@ gap: 10px; /* Adjust the gap between columns */
 }
 .profiletext-name{
   margin-top:30px;
-  font-family: 'Eczar', sans-serif;
+  font-family: 'Inter', sans-serif;
 
   color: var(--background-secondary-white);
   font-size: 28px;
@@ -464,6 +464,8 @@ gap: 10px; /* Adjust the gap between columns */
   
     @media ($tablet) {
       max-width: 660px;
+      font-family: 'Alata',sans-serif;
+
     }
   
     &:not(:last-of-type) {
@@ -476,6 +478,8 @@ gap: 10px; /* Adjust the gap between columns */
   
       @media ($phone) {
         font-size: .85rem;
+        font-family: 'Alata',sans-serif;
+
       }
     }
   
@@ -485,6 +489,8 @@ gap: 10px; /* Adjust the gap between columns */
   
       @media ($phone) {
         font-size: 2rem;
+        font-family: 'Alata',sans-serif;
+
       }
   
       a {
@@ -523,6 +529,8 @@ gap: 10px; /* Adjust the gap between columns */
       @media ($tablet) {
         margin: 20px 0;
         width: 100%;
+        font-family: 'Alata',sans-serif;
+
       }
     }
   }
