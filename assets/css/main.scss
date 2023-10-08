@@ -9,14 +9,6 @@ html {
   box-sizing: inherit;
 }
 
-
-/* Adjust font size for smaller screens (e.g., mobile devices) */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -32,10 +24,9 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
 
-  @media ($phone) {
-    font-size: 1rem;
-  }
+ 
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
@@ -244,74 +235,73 @@ ol ol {
 
 /*////////////////////profile////////////*/
 
-@media (max-width: 3840px) {
+
 .flex-container {
+
 align-content: center;
 align-items: center;
 margin-left: auto;
 margin-right: auto;
 display: flex;
-max-width: 100%;
 flex-direction: row; 
 justify-content: space-between; /* Adjust alignment as needed */
 gap: 100px; /* Adjust the gap between columns */
 
 .profilecolumn1 {
-  margin: auto;
-  padding: auto;
-  max-width: 100%;
-
 
   flex: 1.2; /* Adjust the flex value to control width proportion */
  /* Add styles as needed */
 }
 .profilecolumn2 {
 
-  flex: 1;
-  max-width: 100%;
- /* Adjust the flex value to control width proportion */
+  flex: 1; /* Adjust the flex value to control width proportion */
    /* Add styles as needed */
 }
 
 
 .profilepic{
 
-  width: 100px;
-  height:100px ;
+
+  width: 300px;
+  height: 300px ;
   
   background-position: center;
   border-radius:50%;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; 
+  /* Ensure the tooltip spans the entire width of the image container */
+  text-align: center;
+
 
 
 }
 
+.profiletext-upper{
+  margin-bottom: 10px;  
+    line-height: 1.7em;
+    font-size: 15px;
+    
+   
+}
 .profiletext-name{
   
   color: var(--background-secondary-white);
-  font-family: 'Eczar', sans-serif;
-  font-size: 28px;
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
   font-weight: bold;
   font-style: normal;
 }
 
 .profiletext-sub{
   color: var(--background-secondary-white);
-
-  font-family: "Eczar", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  opacity: 0.6;
+  font-family: 'Eczar', sans-serif;
 }
 
 
 }
-}
+
 
 
 .content {
@@ -388,3 +378,167 @@ h4:hover a {
 }
 
 
+
+
+ @media ($phone) {
+
+.flex-container {
+
+align-content: center;
+align-items: center;
+margin:10px;
+display: flex;
+flex-direction: column; 
+justify-content: space-between; /* Adjust alignment as needed */
+gap: 10px; /* Adjust the gap between columns */
+
+.profilecolumn1 {
+
+.profilepic{
+
+
+  width: 110px;
+  height:110px ;
+  background-position: center;
+  border-radius:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+
+
+}
+
+ /* Add styles as needed */
+}
+.profilecolumn2{
+
+.profiletext-upper{
+  margin-bottom: 10px;  
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+   
+}
+.profiletext-name{
+  margin-top:30px;
+  font-family: 'Eczar', sans-serif;
+
+  color: var(--background-secondary-white);
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.profiletext-sub{
+  color: var(--background-secondary-white);
+
+  font-family: 'Eczar', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  opacity: 0.6;
+}
+
+  flex: 1; /* Adjust the flex value to control width proportion */
+   /* Add styles as needed */
+}
+
+
+
+}}
+   
+  
+
+
+
+.post-cont{
+
+  font-family: 'Alata',sans-serif;
+
+  width: 100%;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto;
+  
+    @media ($tablet) {
+      max-width: 660px;
+    }
+  
+    &:not(:last-of-type) {
+      border-bottom: 1px solid var(--border-color);
+    }
+  
+    &-meta {
+      font-size: 1rem;
+      margin-bottom: 10px;
+  
+      @media ($phone) {
+        font-size: .85rem;
+      }
+    }
+  
+    &-title {
+      font-size: 2.625rem;
+      margin: 0 0 20px;
+  
+      @media ($phone) {
+        font-size: 2rem;
+      }
+  
+      a {
+        text-decoration: none;
+      }
+    }
+  
+    &-tags {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      opacity: .5;
+  
+      a {
+        text-decoration: none;
+      }
+    }
+  
+    &-contents {
+      margin-top: 30px;
+      font-family: 'Alata', Helvetica, sans-serif;
+
+    }
+  
+    &-cover {
+      margin: 40px -50px;
+      width: 860px;
+      max-width: 860px;
+  
+      img {
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+      }
+  
+      @media ($tablet) {
+        margin: 20px 0;
+        width: 100%;
+      }
+    }
+  }
+  
+  .post--regulation {
+    h1 {
+      justify-content: center;
+    }
+  
+    h2 {
+      justify-content: center;
+      margin-bottom: 10px;
+  
+      &+ h2 {
+        margin-top: -10px;
+        margin-bottom: 20px;
+      }
+    }
+  }

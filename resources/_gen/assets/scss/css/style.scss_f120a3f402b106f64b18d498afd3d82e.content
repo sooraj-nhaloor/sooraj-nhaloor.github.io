@@ -99,8 +99,9 @@ body.dark-theme {
   font-family: 'Eczar';
   font-style: normal;
   font-weight: 400;
+  font-style: italic;
   font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-  src: url("../fonts/Eczar-Regular.ttf") format("truetype"); }
+  src: url("../fonts/Eczar-Bold.woff2") format("woff2"); }
 
 .button-container {
   display: table;
@@ -373,11 +374,6 @@ html {
 *:after {
   box-sizing: inherit; }
 
-/* Adjust font size for smaller screens (e.g., mobile devices) */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; } }
-
 body {
   margin: 0;
   padding: 0;
@@ -392,9 +388,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%; }
-  @media (max-width: 684px) {
-    body {
-      font-size: 1rem; } }
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3; }
 
@@ -541,54 +535,49 @@ ol ol {
   align-content: center; }
 
 /*////////////////////profile////////////*/
-@media (max-width: 3840px) {
-  .flex-container {
-    align-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+.flex-container {
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Adjust alignment as needed */
+  gap: 100px;
+  /* Adjust the gap between columns */ }
+  .flex-container .profilecolumn1 {
+    flex: 1.2;
+    /* Adjust the flex value to control width proportion */
+    /* Add styles as needed */ }
+  .flex-container .profilecolumn2 {
+    flex: 1;
+    /* Adjust the flex value to control width proportion */
+    /* Add styles as needed */ }
+  .flex-container .profilepic {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    border-radius: 50%;
     display: flex;
-    max-width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    /* Adjust alignment as needed */
-    gap: 100px;
-    /* Adjust the gap between columns */ }
-    .flex-container .profilecolumn1 {
-      margin: auto;
-      padding: auto;
-      max-width: 100%;
-      flex: 1.2;
-      /* Adjust the flex value to control width proportion */
-      /* Add styles as needed */ }
-    .flex-container .profilecolumn2 {
-      flex: 1;
-      max-width: 100%;
-      /* Adjust the flex value to control width proportion */
-      /* Add styles as needed */ }
-    .flex-container .profilepic {
-      width: 100px;
-      height: 100px;
-      background-position: center;
-      border-radius: 50%;
-      max-width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden; }
-    .flex-container .profiletext-name {
-      color: var(--background-secondary-white);
-      font-family: 'Eczar', sans-serif;
-      font-size: 28px;
-      font-weight: bold;
-      font-style: normal; }
-    .flex-container .profiletext-sub {
-      color: var(--background-secondary-white);
-      font-family: "Eczar", sans-serif;
-      font-size: 18px;
-      font-weight: bold;
-      font-style: normal;
-      opacity: 0.6; } }
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Ensure the tooltip spans the entire width of the image container */
+    text-align: center; }
+  .flex-container .profiletext-upper {
+    margin-bottom: 10px;
+    line-height: 1.7em;
+    font-size: 15px; }
+  .flex-container .profiletext-name {
+    color: var(--background-secondary-white);
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: normal; }
+  .flex-container .profiletext-sub {
+    color: var(--background-secondary-white);
+    font-family: 'Eczar', sans-serif; }
 
 .content {
   display: flex;
@@ -649,6 +638,110 @@ h4:hover a {
 
 .framed .h-anchor {
   visibility: hidden; }
+
+@media (max-width: 684px) {
+  .flex-container {
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Adjust alignment as needed */
+    gap: 10px;
+    /* Adjust the gap between columns */ }
+    .flex-container .profilecolumn1 {
+      /* Add styles as needed */ }
+      .flex-container .profilecolumn1 .profilepic {
+        width: 110px;
+        height: 110px;
+        background-position: center;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; }
+    .flex-container .profilecolumn2 {
+      flex: 1;
+      /* Adjust the flex value to control width proportion */
+      /* Add styles as needed */ }
+      .flex-container .profilecolumn2 .profiletext-upper {
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-family: 'Rubik', sans-serif;
+        font-style: italic; }
+      .flex-container .profilecolumn2 .profiletext-name {
+        margin-top: 30px;
+        font-family: 'Eczar', sans-serif;
+        color: var(--background-secondary-white);
+        font-size: 28px;
+        font-weight: bold;
+        font-style: normal; }
+      .flex-container .profilecolumn2 .profiletext-sub {
+        color: var(--background-secondary-white);
+        font-family: 'Eczar', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        opacity: 0.6; } }
+
+.post-cont {
+  font-family: 'Alata',sans-serif;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  padding: 20px;
+  margin: 20px auto; }
+  @media (max-width: 900px) {
+    .post-cont {
+      max-width: 660px; } }
+  .post-cont:not(:last-of-type) {
+    border-bottom: 1px solid var(--border-color); }
+  .post-cont-meta {
+    font-size: 1rem;
+    margin-bottom: 10px; }
+    @media (max-width: 684px) {
+      .post-cont-meta {
+        font-size: .85rem; } }
+  .post-cont-title {
+    font-size: 2.625rem;
+    margin: 0 0 20px; }
+    @media (max-width: 684px) {
+      .post-cont-title {
+        font-size: 2rem; } }
+    .post-cont-title a {
+      text-decoration: none; }
+  .post-cont-tags {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    opacity: .5; }
+    .post-cont-tags a {
+      text-decoration: none; }
+  .post-cont-contents {
+    margin-top: 30px;
+    font-family: 'Alata', Helvetica, sans-serif; }
+  .post-cont-cover {
+    margin: 40px -50px;
+    width: 860px;
+    max-width: 860px; }
+    .post-cont-cover img {
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); }
+    @media (max-width: 900px) {
+      .post-cont-cover {
+        margin: 20px 0;
+        width: 100%; } }
+.post--regulation h1 {
+  justify-content: center; }
+
+.post--regulation h2 {
+  justify-content: center;
+  margin-bottom: 10px; }
+  .post--regulation h2 + h2 {
+    margin-top: -10px;
+    margin-bottom: 20px; }
 
 .post {
   width: 100%;
