@@ -6,10 +6,9 @@
   {{ if $.Site.Params.Logo.path }}
     <img src="{{ $.Site.Params.Logo.path }}" alt="{{ $.Site.Params.Logo.alt }}" />
     {{ else }}
-    
     <span class="logo__text"
-      >{{ with $.Site.Params.Logo.logoText }}{{ . }}{{ else }}Sooraj Nhaloor{{ end }}</span
+      >{{ with $.Site.Params.Logo.logoText }}{{ . }}{{ else }}Hello !{{ end }}</span
     >
-    
+   
   {{ end }}
 </a>

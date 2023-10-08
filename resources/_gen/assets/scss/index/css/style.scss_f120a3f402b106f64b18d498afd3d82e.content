@@ -15,11 +15,9 @@ body.dark-theme {
   /* dark theme colors */
   --background: #292a2d;
   --background-secondary: #3b3d42;
-  --background-secondary-white:#ffffff;
   --header: #252627;
   --color: #a9a9b3;
   --color-secondary: #73747b;
-  --color-white: #fffffF;
   --border-color: #4a4b50; }
 
 @media (prefers-color-scheme: light) {
@@ -94,13 +92,6 @@ body.dark-theme {
   font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   src: url("../fonts/Inter-BoldItalic.woff2") format("woff2");
   font-display: swap; }
-
-@font-face {
-  font-family: 'Eczar';
-  font-style: normal;
-  font-weight: 400;
-  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-  src: url("../fonts/Eczar-Regular.ttf") format("truetype"); }
 
 .button-container {
   display: table;
@@ -241,7 +232,7 @@ a.read-more:active {
       height: 100%; }
       .logo__mark .greater-icon path {
         stroke: currentColor;
-        stroke-width: 9px; }
+        stroke-width: 8px; }
   .logo__text {
     font-size: 1.125rem; }
   .logo__cursor {
@@ -538,6 +529,7 @@ ol ol {
   display: flex;
   flex-direction: column;
   flex: 1 auto;
+  align-items: center;
   justify-content: center;
   margin: 50px 0; }
   @media (max-width: 684px) {
@@ -592,127 +584,6 @@ h4:hover a {
 
 .framed .h-anchor {
   visibility: hidden; }
-
-/*////////////////////profile////////////*/
-.flex-container {
-  margin: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* Adjust alignment as needed */
-  gap: 100px;
-  /* Adjust the gap between columns */ }
-
-.profilecolumn1 {
-  flex: 1.2;
-  /* Adjust the flex value to control width proportion */
-  /* Add styles as needed */ }
-
-.profilecolumn2 {
-  flex: 1;
-  /* Adjust the flex value to control width proportion */
-  /* Add styles as needed */ }
-
-.profilepic {
-  width: 600px;
-  height: 600px;
-  background-position: center;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; }
-
-.profilecolumn3 {
-  margin-top: 250px;
-  margin-left: 400px;
-  flex: 1;
-  /* Adjust the flex value to control width proportion */
-  /* Add styles as needed */ }
-
-.profiletext-upper {
-  margin-bottom: 10px;
-  line-height: 1.7em;
-  font-size: 15px;
-  font-family: 'Rubik', sans-serif;
-  font-style: italic; }
-
-.profiletext-name {
-  color: var(--background-secondary-white);
-  font-family: 'Eczar', sans-serif;
-  font-size: 48px;
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-Regular.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 400;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-Italic.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-Medium.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 600;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-MediumItalic.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-Bold.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 800;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-BoldItalic.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Eczar';
-    font-style: normal;
-    font-weight: 400;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Eczar-Regular.ttf") format("truetype"); } }
-
-.profiletext-sub {
-  color: var(--background-secondary-white);
-  font-family: "Eczar", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  opacity: 0.6; }
 
 .post {
   width: 100%;
@@ -854,8 +725,7 @@ h4:hover a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1rem;
-    text-align: center; }
+    font-size: 1rem; }
     .footer .copyright--user {
       margin: auto;
       text-align: center; }

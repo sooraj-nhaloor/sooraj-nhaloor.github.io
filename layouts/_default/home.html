@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ with .Site.GetPage "section" "" "home" }}
+
+
+<article >
+    <div class="flex-container">
+    <div class="profilecolumn1">
+        <div class="profilecolumn3">
+          
+            <div class= "profiletext-name">{{ "Sooraj Nhaloor" | markdownify }}</div>
+            <div class="profiletext-sub "> {{ "Physics Grad | Maker and DIYist" | markdownify }} </div>
+        </div>
+        
+      
+    </div>
+
+    <div class="profilecolumn2">
+     
+        <figure class="profilepic">
+
+           <img src="/img/me.jpg">
+
+        </figure>
+             
+    </figure>
+    </div>
+
+</div>
+
+
+</article>
+
+
+
+
+
+                   
+{{ end }}    
+
+{{ end }}
+
+
+
