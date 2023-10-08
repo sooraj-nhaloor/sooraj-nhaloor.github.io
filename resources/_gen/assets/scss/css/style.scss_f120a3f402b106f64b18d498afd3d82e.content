@@ -626,7 +626,6 @@ h4:hover a {
     overflow: hidden; }
   .flex-container .profilecolumn3 {
     margin-top: 100px;
-    margin-left: 10px;
     flex: 1;
     /* Adjust the flex value to control width proportion */
     /* Add styles as needed */ }
