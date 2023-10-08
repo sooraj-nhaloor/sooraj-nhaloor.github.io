@@ -535,6 +535,60 @@ ol ol {
   justify-content: center;
   align-content: center; }
 
+/*////////////////////profile////////////*/
+.flex-container {
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Adjust alignment as needed */
+  gap: 100px;
+  /* Adjust the gap between columns */ }
+  .flex-container .profilecolumn1 {
+    flex: 1.2;
+    /* Adjust the flex value to control width proportion */
+    /* Add styles as needed */ }
+  .flex-container .profilecolumn2 {
+    flex: 1;
+    /* Adjust the flex value to control width proportion */
+    /* Add styles as needed */ }
+  .flex-container .profilepic {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+  .flex-container .profilecolumn3 {
+    margin-top: 0px;
+    flex: 1;
+    /* Adjust the flex value to control width proportion */
+    /* Add styles as needed */ }
+  .flex-container .profiletext-upper {
+    margin-bottom: 10px;
+    line-height: 1.7em;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic; }
+  .flex-container .profiletext-name {
+    color: var(--background-secondary-white);
+    font-family: 'Eczar', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: normal; }
+  .flex-container .profiletext-sub {
+    color: var(--background-secondary-white);
+    font-family: "Eczar", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.6; }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -594,60 +648,6 @@ h4:hover a {
 
 .framed .h-anchor {
   visibility: hidden; }
-
-/*////////////////////profile////////////*/
-.flex-container {
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* Adjust alignment as needed */
-  gap: 100px;
-  /* Adjust the gap between columns */ }
-  .flex-container .profilecolumn1 {
-    flex: 1.2;
-    /* Adjust the flex value to control width proportion */
-    /* Add styles as needed */ }
-  .flex-container .profilecolumn2 {
-    flex: 1;
-    /* Adjust the flex value to control width proportion */
-    /* Add styles as needed */ }
-  .flex-container .profilepic {
-    width: 300px;
-    height: 300px;
-    background-position: center;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; }
-  .flex-container .profilecolumn3 {
-    margin-top: 100px;
-    flex: 1;
-    /* Adjust the flex value to control width proportion */
-    /* Add styles as needed */ }
-  .flex-container .profiletext-upper {
-    margin-bottom: 10px;
-    line-height: 1.7em;
-    font-size: 15px;
-    font-family: 'Rubik', sans-serif;
-    font-style: italic; }
-  .flex-container .profiletext-name {
-    color: var(--background-secondary-white);
-    font-family: 'Eczar', sans-serif;
-    font-size: 38px;
-    font-weight: bold;
-    font-style: normal; }
-  .flex-container .profiletext-sub {
-    color: var(--background-secondary-white);
-    font-family: "Eczar", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    opacity: 0.6; }
 
 .post {
   width: 100%;
