@@ -532,7 +532,8 @@ ol ol {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-content: center; }
 
 .content {
   display: flex;
@@ -614,8 +615,8 @@ h4:hover a {
   /* Add styles as needed */ }
 
 .profilepic {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   background-position: center;
   border-radius: 50%;
   display: flex;
@@ -624,7 +625,7 @@ h4:hover a {
   overflow: hidden; }
 
 .profilecolumn3 {
-  margin-top: 250px;
+  margin-top: 150px;
   margin-left: 400px;
   flex: 1;
   /* Adjust the flex value to control width proportion */
@@ -643,68 +644,6 @@ h4:hover a {
   font-size: 48px;
   font-weight: bold;
   font-style: normal; }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-Regular.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 400;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-Italic.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-Medium.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 600;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-MediumItalic.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-Bold.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 800;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Inter-BoldItalic.woff2") format("woff2");
-    font-display: swap; } }
-
-@font-face {
-  .profiletext-name {
-    font-family: 'Eczar';
-    font-style: normal;
-    font-weight: 400;
-    font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    src: url("../fonts/Eczar-Regular.ttf") format("truetype"); } }
 
 .profiletext-sub {
   color: var(--background-secondary-white);

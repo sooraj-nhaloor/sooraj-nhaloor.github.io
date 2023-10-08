@@ -230,6 +230,7 @@ ol ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
 }
 
 .content {
@@ -328,8 +329,8 @@ h4:hover a {
 
 .profilepic{
 
-  width: 600px;
-  height: 600px ;
+  width: 400px;
+  height: 400px ;
   
   background-position: center;
   border-radius:50%;
@@ -341,7 +342,7 @@ h4:hover a {
 
 }
 .profilecolumn3 { 
-  margin-top: 250px;
+  margin-top: 150px;
   margin-left: 400px;
   
   flex: 1; /* Adjust the flex value to control width proportion */
@@ -357,7 +358,7 @@ h4:hover a {
    
 }
 .profiletext-name{
-  @import 'fonts'; 
+  
   color: var(--background-secondary-white);
   font-family: 'Eczar', sans-serif;
   font-size: 48px;
