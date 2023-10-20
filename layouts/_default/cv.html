@@ -1,0 +1,16 @@
+{{ define "main" }}
+  
+{{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
+  {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+
+  <article class="post">
+    <h1 class="home">{{ .Title | markdownify }}</h1>
+
+    {{ if .Params.Cover }}
+    {{ partial "postcover.html" . }}
+    {{ end }}
+    {{ .Content }}
+   
+
+  </article>
+{{ end }}
